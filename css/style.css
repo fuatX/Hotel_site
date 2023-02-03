@@ -8,6 +8,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 /* default font rem :10px */
@@ -100,6 +101,12 @@ img {
   color: var(--white);
   position: relative;
 }
+
+.main-header.blog {
+  background-image: url(../img/bg-2.jpeg);
+  height: 50vh;
+}
+
 .main-header .content {
   display: flex;
   flex-direction: column;
@@ -223,6 +230,17 @@ img {
   font-size: 4rem;
 }
 
+/* article */
+
+.articles {
+  padding: 3rem 5rem;
+}
+
+.article {
+  margin-top: 1.5rem;
+  color: var(--white);
+}
+
 /* footer */
 
 .footer {
@@ -252,12 +270,33 @@ footer a:hover {
   html {
     font-size: 10px;
   }
+  .navbar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-content: center;
+    height: 5rem;
+  }
+  .navbar h1 {
+    font-size: 2rem;
+  }
+
+  .navbar a {
+    margin: 0 3px;
+    padding: 10px;
+  }
 
   .teams img {
     width: 50%;
   }
+  .main-header.blog {
+    background-image: url(../img/bg-2.jpeg);
+    height: 30vh;
+  }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   html {
     font-size: 8px;
   }
@@ -271,7 +310,12 @@ footer a:hover {
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-content: center;
+    height: 5rem;
   }
+  .navbar h1 {
+    font-size: 2rem;
+  }
+
   .navbar a {
     margin: 0 3px;
     padding: 10px;
